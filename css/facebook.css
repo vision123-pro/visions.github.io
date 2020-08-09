@@ -1,0 +1,67 @@
+body{
+background-image: url("dark2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.container{
+width: 40%;
+background-color: white;
+
+text-align: center;
+margin:90px auto;
+
+}
+.signup{
+width: 270px;
+background-color: blue;
+color: white;
+text-align: center;
+padding: 5px;
+border: none;
+border-radius: 5px;
+
+
+
+
+}
+.input1{
+width: 200px;
+border-radius: 2px;
+
+
+
+}
+.input2{
+width: auto;
+
+
+
+}
+a{
+
+    text-decoration: none;
+}
+hr{
+width: 80%;
+background-color: brown;
+
+
+
+}
+.sign{
+width: 30%;
+height: 40px;
+
+background-color: #2ecc71;
+border-radius: 8px;
+
+
+}
+.sign a{
+
+
+    color: black;
+    font-weight: bold;
+   
+}
