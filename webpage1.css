@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(w1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    background-color: rgba(28, 14, 224, 0.932);
+    height: 50px;
+    width: 100%;
+}
+.leftmenu{
+
+float: left;
+
+height: 50px;
+
+
+}
+.leftmenu h2{
+color: white;
+
+text-align: center;
+line-height: 50px;
+font-weight: bold;
+margin-left: 20px;
+}
+.rightmenu{
+
+float: right;
+
+height: 50px;
+
+}
+.rightmenu ul{
+    list-style-type: none;
+    display: inline;
+margin-left: 490px;
+
+}
+.rightmenu ul li{
+    color: white;
+    display: inline;
+   font-size: 20px;
+ 
+
+ font-weight: bold;
+margin-right: 50px;
+    
+}
+.rightmenu ul a{
+
+ text-decoration: none;
+
+}
+.rightmenu ul li:hover{
+background-color: salmon;
+
+}
+.homset1{
+ background-color: ;
+}
