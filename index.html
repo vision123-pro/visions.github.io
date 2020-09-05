@@ -3,15 +3,113 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Responsive-Menu</title>
+      <!-- <link rel="stylesheet" type="text/css" href="responsive-menu.css"/> -->
       <style>
             *{
-                  margin: 0px;
-                  padding: 0px;
-            }
-            body{
-                  background-color: black;
-            }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+.main{
+      display: flex;
+      background-color: black;
+justify-content: center;
+
+
+
+}
+.main ul {
+      list-style-type: none;
+}
+.main ul li{
+      display: inline;
+}
+.main ul{
+      display: flex;
+     
+      
+}
+.main a{
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 15px 40px;
+      font-size: 23px;
+     
+      
+}
+.main ul a:hover{
+      color: black;
+      background-color: white;
+}
+p{
+      background-color: powderblue;
+      color: red;
+}
+#toggle{
+      display: none;
+}
+.togglearea{
+      background-color: black;
+      color: white;
+      border-bottom: 2px solid blue;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+}
+.togglearea label{
+      background-color: white;
+      color: black;
+      width: 50px;
+      height: 45px;
+      border-radius: 6px;
+      cursor: pointer;
+      /* we used flexbox and there properties because to use of SPAN , flex work on container, that's why i used flex in container . and here container of SPAN is LABEL */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.togglearea label span{
+background-color: black;
+height: 3px;
+width: 70%;
+margin: 3px 0px;
+}
+.togglearea{
+      display: none;
+}
+
+
+@media screen and ( max-width:700px ){
+    .main ul{
+          flex-direction: column;
+          display: none;
+    }
+    #toggle:checked + .main ul{
+          display: flex;
+    }
+    .togglearea{
+      display: flex;
+}
+.container{
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+}
+
+}
+
+/* gallery css code below */
+
 .container{
 
 
@@ -20,6 +118,7 @@ justify-content: center;
 
 
 }
+
 img{
       width: 250px;
       height: 280px;
@@ -41,38 +140,111 @@ h2{
       color: white;
 }
 
-@media screen and (min-width:300px)and (max-width: 768px){
-      .container{
-
-
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
-
+figcaption{
+      text-align: center;
+      background-color: cadetblue;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    margin: 1px;
+}
+figcaption a{
+      text-decoration: none;
+      color: black;
+   
+}
+figcaption:hover{
+      border: 2px solid red;
 }
 
+
+@media screen  and (min-width:1200px){
+      .main{
+            height: 80px;
+            display: flex;
+            align-items: center;
+      }
 }
-
-
-
       </style>
 </head>
 <body>
-      <h2>image gallery under process</h2>
+      <div class="togglearea">
+      <label for="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+      </label>
+</div>
+      <input type="checkbox" id="toggle">
+      <div class="main">
+
+<ul>
+
+<a href="#"><li>Home</li></a>
+<a href="#"><li>Gallery</li></a>
+<a href="#"><li>Contact</li></a>
+<a href="#"><li>About Us</li></a>
+
+
+
+</ul>
+</div>
+<br><br>
+<p>
+      THIS IS DEMO VERSION OF RESPONSIVE SITE, it's only the beginning of DREAM WEB DESIGNER.
+</p><br>
+<P>
+      This page is made with help of external source, because we don't have any concept of javascript.
+</P><br><br>
+<h2>image gallery under process</h2>
       <div class="container">
 
 
+<figure>
+ <img src="images/vision1.jpg" alt="vision's image"> 
+<figcaption>
+      <a href="images/vision1.jpg" download>download</a>
+</figcaption>
+</figure>
 
-<img src="images/vision1.jpg" alt="vision's image">
-<img src="images/vision2.jpg" alt="vision's image">
-<img src="images/vision3.jpg" alt="vision's image">
-<img src="images/vision4.jpg" alt="vision's image">
-<img src="images/vision5.jpg" alt="vision's image">
-<img src="images/vision6.jpg" alt="vision's image">
+<figure>
+      <img src="images/vision2.jpg" alt="vision's image"> 
+     <figcaption>
+           <a href="images/vision2.jpg" download>download</a>
+     </figcaption>
+     </figure>
 
+     <figure>
+      <img src="images/vision3.jpg" alt="vision's image"> 
+     <figcaption>
+           <a href="images/vision3.jpg" download>download</a>
+     </figcaption>
+     </figure>
 
+     <figure>
+      <img src="images/vision4.jpg" alt="vision's image"> 
+     <figcaption>
+           <a href="images/vision4.jpg" download>download</a>
+     </figcaption>
+     </figure>
+
+     <figure>
+      <img src="images/vision5.jpg" alt="vision's image"> 
+     <figcaption>
+           <a href="images/vision5.jpg" download>download</a>
+     </figcaption>
+     </figure>
+
+     <figure>
+      <img src="images/vision6.jpg" alt="vision's image"> 
+     <figcaption>
+           <a href="images/vision6.jpg" download>download</a>
+     </figcaption>
+     </figure>
+     
 
       </div>
 </body>
