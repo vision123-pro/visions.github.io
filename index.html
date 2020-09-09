@@ -1,251 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Responsive-Menu</title>
-      <!-- <link rel="stylesheet" type="text/css" href="responsive-menu.css"/> -->
+      <title>VISION_THE_PHOTOGRAPHY</title>
+      <link rel="shortcut icon" type="image/jpg" href="vision-logo.jpg">
       <style>
-            *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-.main{
-      display: flex;
-      background-color: black;
-justify-content: center;
+            body {
+                  background-image: url(camerabg1.jpg);
+                  background-size: cover;
+
+                  background-repeat: no-repeat;
+                  width: 100%;
+
+            }
+
+            * {
+                  margin: 0;
+                  padding: 0;
+
+                  box-sizing: border-box;
+            }
+
+            .main {
+                  display: flex;
+                  justify-content: space-between;
+                  background-color: rgba(0, 0, 0, 1);
+                  padding: 20px 70px;
+                  align-items: center;
+
+            }
+
+            .menu ul {
+                  display: flex;
+                  list-style-type: none;
+            }
+
+            .head h2 {
+                  text-transform: uppercase;
+                  padding: 0px 20px;
+                  color: #fff;
+            }
+
+            .menu ul li {
+
+
+                  padding: 5px 10px;
+            }
+
+            .menu a {
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  color: white;
+                  margin: 0px 10px;
+                  opacity: 0.8;
+
+            }
+
+            .menu ul li:hover {
+                  background-color: blue;
+
+            }
 
 
 
-}
-.main ul {
-      list-style-type: none;
-}
-.main ul li{
-      display: inline;
-}
-.main ul{
-      display: flex;
-     
-      
-}
-.main a{
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 15px 40px;
-      font-size: 23px;
-     
-      
-}
-.main ul a:hover{
-      color: black;
-      background-color: white;
-}
-p{
-      background-color: powderblue;
-      color: red;
-}
-#toggle{
-      display: none;
-}
-.togglearea{
-      background-color: black;
-      color: white;
-      border-bottom: 2px solid blue;
-      padding: 10px;
-      display: flex;
-      justify-content: flex-end;
-}
-.togglearea label{
-      background-color: white;
-      color: black;
-      width: 50px;
-      height: 45px;
-      border-radius: 6px;
-      cursor: pointer;
-      /* we used flexbox and there properties because to use of SPAN , flex work on container, that's why i used flex in container . and here container of SPAN is LABEL */
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-.togglearea label span{
-background-color: black;
-height: 3px;
-width: 70%;
-margin: 3px 0px;
-}
-.togglearea{
-      display: none;
-}
+
+            /* try */
+
+            @media screen and (min-width:300px) and (max-width:768px) {
+                  .menu ul {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-bottom: 10px;
+
+                  }
+
+                  .menu {
+                        margin-top: 5px;
+                  }
+
+                  .menu ul li {
+                        border-bottom: 2px solid blue;
+                        text-align: center;
 
 
-@media screen and ( max-width:700px ){
-    .main ul{
-          flex-direction: column;
-          display: none;
-    }
-    #toggle:checked + .main ul{
-          display: flex;
-    }
-    .togglearea{
-      display: flex;
-}
-.container{
+                  }
+
+                  .main {
+
+                        display: flex;
+
+                        flex-direction: column;
+                        margin-top: 38px;
+                        padding: 10px 70px;
+                  }
+
+                  .head {
+                        position: absolute;
+                        top: 0;
+                        background-color: rgb(78, 68, 61);
+                        width: 100%;
+                        text-align: center;
+                        padding: 6px 0px;
+                        letter-spacing: 3px;
 
 
-display: flex;
-flex-direction: column;
-align-items: center;
+                  }
+
+                  body {
+                        background-image: url(camerabg1.jpg);
+                  }
+
+                  .our-services {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+
+                  }
+
+                  .logos {
+
+                        width: 200px;
+                        margin-bottom: 40px;
+
+                  }
+
+                  .gallery {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                  }
+
+                  .subscribe-position {
+                        display: flex;
+
+                        flex-direction: column;
+                        align-items: center;
+
+
+                  }
+
+                  .subscribe-position button {
+                        margin: 13px 0px;
+                        height: 40px;
+                  }
+
+                  .subscribe-position input[type=email] {
+                        height: 40px;
+                        max-width: 230px;
+
+                  }
+
+                  .position-contact {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                  }
+            }
 
 
 
-}
-
-}
-
-/* gallery css code below */
-
-.container{
 
 
-display: flex;
-justify-content: center;
+
+            .front-container {
+                  text-align: center;
+            }
+
+            .front-container {
+                  margin-top: 120px;
+            }
+
+            .front-container h3 {
+                  color: white;
+                  font-size: 32px;
+                  padding-bottom: 10px;
+                  letter-spacing: 5px;
+
+            }
+
+            .front-container p {
+                  color: white;
+                  font-weight: lighter;
+                  letter-spacing: 3px;
+                  padding-bottom: 10px;
+            }
+
+            .front-container button {
+                  padding: 10px 20px;
+                  background-color: rgb(65, 51, 190);
+                  color: white;
+                  font-weight: bold;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 8px;
+                  border: 1px solid white;
+                  margin-top: 3px;
+            }
+
+            p {
+                  text-align: center;
+
+            }
+
+            h2 {
+                  text-align: center;
+                  padding-top: 30px;
+            }
+
+            #main-services {
+                  background-color: #fff;
+                  margin-top: 30px;
+            }
+
+            .our-services {
+                  display: flex;
+
+                  justify-content: center;
+
+                  padding: 50px 0px;
+
+            }
+
+            .logos {
+                  width: 300px;
+                  text-align: center;
+                  padding: 0px 30px;
+                  font-weight: lighter;
+            }
+
+            .logos i {
+                  font-size: 30px;
+                  color: black;
+                  display: block;
+            }
+
+            /* our works */
+            .gallery img {
+                  width: 250px;
+                  height: 200px;
+                  padding: 2px;
+
+                  box-shadow: 5px 5px 5px 5px;
+                  margin: 10px 5px 50px 5px;
+
+            }
+
+            .gallery {
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
 
 
-}
+            }
 
-img{
-      width: 250px;
-      height: 280px;
-      border: 2px dotted purple;
-      box-sizing: border-box;
-      margin-top: 10px;
+            #our-works {
+                  background-color: #f4f4f4;
+            }
 
-}
+            #our-works h2 {
+                  letter-spacing: 3px;
+            }
 
-img:hover{
-    border: 4px solid red;
+            #our-works p {
+                  letter-spacing: 2px;
+                  margin-top: 5px;
+                  margin-bottom: 17px;
+            }
 
-}
-h2{
-      text-align: center;
-      text-transform: uppercase;
-      padding: 10px;
-      background-color: black;
-      color: white;
-}
+            .subscribe {
+                  background-color: #fff;
 
-figcaption{
-      text-align: center;
-      background-color: cadetblue;
-    text-transform: uppercase;
-    padding: 5px 0px;
-    border: 2px solid red;
-    box-sizing: border-box;
-    margin: 1px;
-}
-figcaption a{
-      text-decoration: none;
-      color: black;
-   
-}
-figcaption:hover{
-      border: 2px solid red;
-}
+            }
 
+            .subscribe h2 {
+                  font-size: 27px;
+                  font-weight: bold;
+                  letter-spacing: 1px;
+            }
 
-@media screen  and (min-width:1200px){
-      .main{
-            height: 80px;
-            display: flex;
-            align-items: center;
-      }
-}
+            .subscribe-position {
+                  display: flex;
+                  justify-content: center;
+                  margin: 10px 0px;
+
+            }
+
+            input[type=email] {
+                  height: 30px;
+                  width: 300px;
+                  padding: 0px 8px;
+
+            }
+
+            .subscribe-position button {
+                  margin-left: 20px;
+                  background-color: chocolate;
+                  color: white;
+                  padding: 3px 15px;
+                  height: 30px;
+                  border: none;
+                  border-radius: 4px;
+            }
+
+            #main-contact {
+                  background-color: #524a4a;
+                  color: white;
+            }
+
+            #main-contact h2,
+            p {
+                  letter-spacing: 2px;
+            }
+
+            .position-contact {
+                  display: flex;
+                  justify-content: center;
+            }
+
+            .left-contact-us {
+                  width: 48%;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+            }
+
+            .right-contact-us {
+                  width: 48%;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+            }
+
+            .left-contact-us i {
+
+                  font-size: 30px;
+                  color: rgb(15, 14, 14);
+
+            }
+
+            .left-contact-us p {
+                  padding-top: 3px;
+            }
+
+            .address {
+                  padding-bottom: 20px;
+            }
+
+            .position-contact {
+                  margin-top: 40px;
+            }
+
+            .right-contact-us input[type=text] {
+                  width: 250px;
+                  height: 35px;
+                  padding: 2px 10px;
+                  margin-bottom: 20px;
+            }
+
+            .right-contact-us button {
+                  width: 250px;
+                  height: 35px;
+                  cursor: pointer;
+                  margin-bottom: 30px;
+            }
+            .footer1{
+                  background-color: #f4f4f4;
+
+            }
+            footer{
+                  text-align: center;
+                  font-weight: bold;
+            }
+            .responsive h3{
+                  margin-bottom: 5px;
+            }
       </style>
+      <link rel="stylesheet" type="text/css" href="proje1ct.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+
+
 </head>
+
 <body>
-      <div class="togglearea">
-      <label for="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-
-
-      </label>
-</div>
-      <input type="checkbox" id="toggle">
       <div class="main">
-
-<ul>
-
-<a href="#"><li>Home</li></a>
-<a href="#"><li>Gallery</li></a>
-<a href="#"><li>Contact</li></a>
-<a href="#"><li>About Us</li></a>
-
-
-
-</ul>
-</div>
-<br><br>
-<p>
-      THIS IS DEMO VERSION OF RESPONSIVE SITE, it's only the beginning of DREAM WEB DESIGNER.
-</p><br>
-<P>
-      This page is made with help of external source, because we don't have any concept of javascript.
-</P><br><br>
-<h2>image gallery under process</h2>
-      <div class="container">
-
-
-<figure>
- <img src="images/vision1.jpg" alt="vision's image"> 
-<figcaption>
-      <a href="images/vision1.jpg" download>download</a>
-</figcaption>
-</figure>
-
-<figure>
-      <img src="images/vision2.jpg" alt="vision's image"> 
-     <figcaption>
-           <a href="images/vision2.jpg" download>download</a>
-     </figcaption>
-     </figure>
-
-     <figure>
-      <img src="images/vision3.jpg" alt="vision's image"> 
-     <figcaption>
-           <a href="images/vision3.jpg" download>download</a>
-     </figcaption>
-     </figure>
-
-     <figure>
-      <img src="images/vision4.jpg" alt="vision's image"> 
-     <figcaption>
-           <a href="images/vision4.jpg" download>download</a>
-     </figcaption>
-     </figure>
-
-     <figure>
-      <img src="images/vision5.jpg" alt="vision's image"> 
-     <figcaption>
-           <a href="images/vision5.jpg" download>download</a>
-     </figcaption>
-     </figure>
-
-     <figure>
-      <img src="images/vision6.jpg" alt="vision's image"> 
-     <figcaption>
-           <a href="images/vision6.jpg" download>download</a>
-     </figcaption>
-     </figure>
-     
+            <div class="head">
+                  <h2> Vision's </h2>
+            </div>
+            <div class="menu">
+                  <ul>
+                        <a href="#project.html">
+                              <li>home</li>
+                        </a>
+                        <a href="#our-works">
+                              <li>Works</li>
+                        </a>
+                        <a href="#main-services">
+                              <li>services</li>
+                        </a>
+                        <a href="#main-contact">
+                              <li>contact</li>
+                        </a>
+                  </ul>
+            </div>
 
       </div>
+
+      <div class="front-container">
+
+            <h3>VISION'S</h3>
+            <P>Home Of Quality Photos</P>
+            <p>A ERA OF MODERN PHOTOGRAPHY</p>
+
+            <a href="project-learn-more.html"><button>
+                        Learn More
+                  </button></a>
+      </div>
+
+      <!-- our serives -->
+      <div id="main-services">
+            <h2>Our Services</h2>
+
+            <p>
+                  Vision provide large number of services to their clients
+            </p>
+            <div class="our-services">
+                  <div class="logos logos1">
+                        <i class="fa fa-camera set-logo" aria-hidden="true"></i>
+                      
+                        <div class="responsive">
+                              <H3>PHOTOGRAPHY</H3>
+                            We provide standard level photos of different categories like Nature, Street, Portrait, Urban, Rural and some interesting pictures.
+                               </div>
+                  </div>
+                  <div class="logos logos2">
+                        <i class="fa fa-handshake-o set-logo" aria-hidden="true"></i>
+                        <div class="responsive">
+                             <H3>MARKETING</H3>
+                             We  build brand awarnesss by gathering a small group of people to give opinions about various aspects of our photography. 
+                              </div>
+                  </div>
+                  <div class="logos logos3">
+                      
+                        <i class="fa fa-laptop set-logo" aria-hidden="true"></i>
+                      
+                        <div class="responsive">
+                              <H3>WEB DESIGN</H3>
+                              We provide framework to design your website together with free plugins, themes, domains, security and hosting.
+                              </div>
+                  </div>
+
+            </div>
+      </div>
+      <!-- our works -->
+      <div id="our-works">
+            <h2>Our Works</h2>
+            <p>
+                  Vision provide large number of services to their clients
+            </p>
+
+            <div class="gallery">
+                  <img src="laptop3.jpg" alt="">
+                  <img src="laptop2.jpg" alt="">
+                  <img src="laptop1.jpg" alt="">
+                  <img src="laptop4.jpg" alt="">
+            </div>
+      </div>
+
+      <!-- subscribe -->
+      <div class="subscribe">
+            <h2>Subscribe Us</h2>
+            <div class="subscribe-position">
+
+                  <input type="email" placeholder="Email" name="user-email">
+                  <a href="TY.HTML"><button>SUBSCRIBE</button></a>
+            </div>
+            <br><br>
+      </div>
+      <div id="main-contact">
+            <h2>
+                  Contact Us
+            </h2>
+            <p>You can contact with us by subscribing your Mail</p>
+            <div class="position-contact">
+                  <div class="left-contact-us">
+                        <a href="#"> <i class="fa fa-map-marker  icons" aria-hidden="true"></i></a>
+                        <div class="address">
+                              <p>210, Green park zone, koderma </p>
+                              <p>Jharkhand, India </p>
+                        </div>
+                        <a href="#"><i class="fa fa-envelope  icons" aria-hidden="true"></i></a>
+                        <div class="address">
+                              <p>Visionthephotography@gmail.com</p>
+                        </div>
+                        <a href="#"><i class="fa fa-phone  icons" aria-hidden="true"></i></a>
+                        <div class="address">
+                              <p> +91 8709658783</p>
+                              <p> +91 8709942167</p>
+                        </div>
+
+
+                  </div>
+
+                  <div class="right-contact-us">
+                        <div class="form-type">
+                              <input type="text" name="" id="" placeholder="Enter your name...."><br>
+                              <input type="text" name="" id="" placeholder="Enter your email...."><br>
+                              <div class="btn">
+                                    <a href="TY1.HTML">
+                                          <button>SUBMIT</button>
+                                    </a></div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <div class="footer1">
+            <footer>
+                  ALL RIGHT RESERVED &#174; VISION
+            </footer>
+      </div>
 </body>
+
 </html>
